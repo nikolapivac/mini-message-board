@@ -10,9 +10,9 @@ const messages = [
     date: new Date()
   },
   {
-    title: 'Lorde',
+    title: 'Food thought',
     description:
-      'Lorde is my favorite artist',
+      'I love risoto',
     username: 'Laurie',
     date: new Date()
   }
