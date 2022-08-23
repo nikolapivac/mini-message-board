@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background: rgb(52, 30, 59);
+  color: white;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+main {
+  width: 60%;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: rgb(210, 193, 215);
+  padding: 8px 16px;
+  border: 1px solid rgb(52, 30, 59);
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(52, 30, 59);
+}
+
+.message-container,
+.form-container {
+  background-color: rgb(210, 193, 215);
+  padding: 8px 16px;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.message-container h2 {
+  color: rgb(52, 30, 59);
+  padding-left: 8px;
+  margin: 8px;
+}
+
+.message-container p {
+  margin: 8px;
+  padding-left: 16px;
+}
+
+.message-container .username {
+  font-size: 12px;
+}
+
+.message-container .date {
+  font-size: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 8px;
+}
+
+.form-container {
+  width: 350px;
+  align-self: center;
+  align-items: center;
+}
+
+input,
+textarea,
+form button {
+  width: 300px;
+  margin: 16px 0;
+}
+
+input, 
+textarea {
+  padding: 4px;
+  border-radius: 8px;
+  border: none;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 100px;
+}

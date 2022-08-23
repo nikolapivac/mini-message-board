@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  header
+    h1= title
+    p='Post a new short message!'
+  main 
+    .button-container
+      a(href=`http://localhost:3000/new`): button.compose= "Add new message"
+    each message in messages
+      section.message-container 
+        h2=message.title 
+        p=message.description
+        p.username= message.username
+        p.date= message.date

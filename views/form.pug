@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+    header 
+        h1= 'Mini message board'
+        p= 'Post a new short message!'
+    main
+        section.form-container 
+            form(method='POST' action='/new')
+                input(type='text', placeholder='Title' name='title' id='title')
+                textarea(name='description' placeholder='I hate hot summer days!' cols='30' )
+                input(type='text' placeholder='Username' name='username' id='username')
+                button(type='submit' id='submit-btn')= 'Post'
+
